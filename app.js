@@ -18,7 +18,6 @@ while (birthYear === "" || birthYear === null || validBirthYear === false) {
 				}
 				else if (birthYear.length !== 4) {
 								alert("Input should contain 4 digits!");
-								alert(birthYear.length);
 				}
 				else if (birthYear > currentYear) {
 								alert("Given year has yet to come!");
