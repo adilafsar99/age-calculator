@@ -1,14 +1,21 @@
 .page {
-				text-align: center;
-				font-family: monospace;
-				width: 80%;
-				margin: 0 auto;
-				padding: 50px 20px;
-				background-color: #f2d151;
-				border: 5px double;
-				border-radius: 30px;
+	text-align: center;
+	font-family: monospace;
+	width: 70%;
+	margin: 0 auto;
+	padding: 50px 20px;
+	background-color: #f2d151;
+	border: 5px double;
+	border-radius: 30px;
 }
 
 .sub-heading {
-				font-weight: bold;
+	font-weight: bold;
+}
+
+/* Media Queries */
+@media(max-width: 500px) {
+   .page {
+       width: 90%;
+    }
 }
