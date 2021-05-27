@@ -15,10 +15,7 @@
 
 /* Media Queries */
 @media(max-width: 500px) {
-     body {
-       padding: 0 15px;
-     }
     .page {
-       width: 90%;
+       width: 85%;
     }
 }
