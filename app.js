@@ -3,31 +3,31 @@ var currentYear = Math.floor(currentMillis / (1000 * 60 * 60 * 24 * 30 * 12)) + 
 var birthYear = "";
 var validBirthYear = false;
 while (birthYear === "" || birthYear === null || validBirthYear === false) {
-	birthYear = prompt("Enter your birth year:");
-		if (birthYear === null) {
-								alert("Please proceed!");
-		}
-		else if (birthYear === "") {
-								alert("You entered nothing!");
-		}
-		else if (birthYear != Number(birthYear)) {
-								alert("This isn't a number!");
-		}
-		else if (birthYear.indexOf(".") !== -1) {
-								alert("Year must be an integer!")
-		}
-		else if (birthYear.length !== 4) {
-								alert("Input should contain 4 digits!");
-		}
-		else if (birthYear > currentYear) {
-								alert("Given year has yet to come!");
-		}
-		else if (birthYear < 0) {
-								alert("Negative year is not possible!")
-		}
-		else {
-								validBirthYear = true;
-		}
+   birthYear = prompt("Enter your birth year:");
+      if (birthYear === null) {
+	alert("Please proceed!");
+      }
+      else if (birthYear === "") {
+	alert("You entered nothing!");
+      }
+      else if (birthYear != Number(birthYear)) {
+	alert("This isn't a number!");
+      }
+      else if (birthYear.indexOf(".") !== -1) {
+	alert("Year must be an integer!")
+      }
+      else if (birthYear.length !== 4) {
+	alert("Input should contain 4 digits!");
+      }
+      else if (birthYear > currentYear) {
+	alert("Given year has yet to come!");
+      }
+      else if (birthYear < 0) {
+	alert("Negative year is not possible!")
+      }
+      else {
+	validBirthYear = true;
+      }
 }
 
 var age = currentYear - birthYear;
